@@ -225,9 +225,22 @@ footer {
     }
 
     /* Buku Kenangan */
-    .student {
-        max-width: 150px;
+    .yearbook {
+        flex-direction: column; /* Membuat card dalam satu kolom */
+        gap: 1.5rem; /* Memberikan jarak antar card */
+        align-items: center;
     }
+
+    .student {
+        max-width: 90%; /* Menggunakan lebar hampir penuh pada layar mobile */
+        padding: 1rem;
+    }
+
+    .student img {
+        height: auto; /* Menghilangkan tinggi tetap agar sesuai dengan lebar */
+        max-width: 100%; /* Mengisi lebar penuh dari card */
+    }
+
     .student h3 {
         font-size: 1rem;
     }
